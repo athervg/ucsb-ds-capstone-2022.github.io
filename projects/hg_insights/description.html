@@ -462,18 +462,6 @@
   <a class="reference internal nav-link" href="#data">
    Data
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#install-data-sample-n-3">
-     Install Data (sample n = 3)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#time-series-data-n-3">
-     Time Series Data (n = 3)
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#progress">
@@ -519,18 +507,6 @@
   <a class="reference internal nav-link" href="#data">
    Data
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#install-data-sample-n-3">
-     Install Data (sample n = 3)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#time-series-data-n-3">
-     Time Series Data (n = 3)
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#progress">
@@ -556,38 +532,25 @@
 <p>Project description</p>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>HG Insights is a data analytics company that offers an intelligence platform to help optimize strategic planning and sales execution. Our capstone team is working with HG Insights to develop a machine learning model to predict the adoption of existing and/or new technologies based on the respective qualities of a company. The primary goal of this project is to analyze patterns in product adoption to effectively engage with existing and/or potential customers.
-Our primary dataset consists of two large datasets regarding many company’s qualities across the United States over a span of 20 years ranging from 2020 to the present. The results of this project could potentially lead to cost and time effective solutions for companies.  
-</pre></div>
-</div>
+<p>HG Insights is a data analytics company that offers an intelligence platform to help optimize strategic planning and sales execution. Our capstone team is working with HG Insights to develop a machine learning model to predict the adoption of existing and/or new technologies based on the respective qualities of a company. The primary goal of this project is to analyze patterns in product adoption to effectively engage with existing and/or potential customers.
+Our primary dataset consists of two large datasets regarding many company’s qualities across the United States over a span of 20 years ranging from 2020 to the present. The results of this project could potentially lead to cost and time effective solutions for companies.</p>
 </div>
 <div class="section" id="goal-of-the-project">
 <h2>Goal of the Project<a class="headerlink" href="#goal-of-the-project" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Our primary goal for this project is to predict future technology purchase based on products adopted at a company. Using the company’s firmographic information (name, url, geo, revenue, employee count, industry), product information (vendor information, release date, related products category/taxonomy) and product adoption information (first date product detected, most recent date product detected, product intensity). Such that companies get to ask questions like ‘Show me Automotive Companies in Germany who HG Insights predicts is going to purchase SAP HANA’.  
-</pre></div>
-</div>
+<p>Our primary goal for this project is to predict future technology purchase based on products adopted at a company. Using the company’s firmographic information (name, url, geo, revenue, employee count, industry), product information (vendor information, release date, related products category/taxonomy) and product adoption information (first date product detected, most recent date product detected, product intensity). Such that companies get to ask questions like ‘Show me Automotive Companies in Germany who HG Insights predicts is going to purchase SAP HANA’.</p>
 </div>
 <div class="section" id="data">
 <h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Two main datasets were provided to us, “capstone_install_data_20220111.csv” and “capstone_time_data_20220111.csv.” Both datasets contain information collected by HG Insights on the products and technologies in use at the companies recorded. The first dataset contains information by company and by product of the first and most recent confirmed date that a specific product/technology is observed, as well as information about the company (including revenue, employee count, industry of the company, country of location, etc) and information about the product (including categorization of the product, whether or not it belongs in a competitive group, recency of signal presence, and a unique intensity and weighted intensity value which indicates the signal strength which is a measure of the confidence that the product is/was in use at the time recorded).
-
-The second dataset is a time series record of every confirmed installation of a product at the company it is recorded at. This dataset only contains three columns, an ID value of the product unique to HG’s proprietary data feed, the date of verification, and the weighted intensity value (which is the same metric as in the install dataset.
-</pre></div>
-</div>
-<div class="section" id="install-data-sample-n-3">
-<h3>Install Data (sample n = 3)<a class="headerlink" href="#install-data-sample-n-3" title="Permalink to this headline">¶</a></h3>
-<p><img alt="" src="../../_images/installdata.png" /></p>
-</div>
-<div class="section" id="time-series-data-n-3">
-<h3>Time Series Data (n = 3)<a class="headerlink" href="#time-series-data-n-3" title="Permalink to this headline">¶</a></h3>
-<p><img alt="" src="../../_images/timeseries.png" /></p>
-</div>
+<p>Two main datasets were provided to us, “capstone_install_data_20220111.csv” and “capstone_time_data_20220111.csv.” Both datasets contain information collected by HG Insights on the products and technologies in use at the companies recorded. The first dataset contains information by company and by product of the first and most recent confirmed date that a specific product/technology is observed, as well as information about the company (including revenue, employee count, industry of the company, country of location, etc) and information about the product (including categorization of the product, whether or not it belongs in a competitive group, recency of signal presence, and a unique intensity and weighted intensity value which indicates the signal strength which is a measure of the confidence that the product is/was in use at the time recorded).</p>
+<p>The second dataset is a time series record of every confirmed installation of a product at the company it is recorded at. This dataset only contains three columns, an ID value of the product unique to HG’s proprietary data feed, the date of verification, and the weighted intensity value (which is the same metric as in the install dataset.</p>
+<p><em>Install Data (sample n = 3)</em>
+<img alt="" src="../../_images/installdata.png" /></p>
+<p><em>Time Series Data (n = 3)</em>
+<img alt="" src="../../_images/timeseries.png" /></p>
 </div>
 <div class="section" id="progress">
 <h2>Progress<a class="headerlink" href="#progress" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>So far, we worked on cleaning the data and did some exploratory data analysis. We dropped a couple columns that have too many NAs in them,  and tried to use different methods to find the correlations between the variables and the products such as heatmap, random forest, and permutation feature importance. 
-</pre></div>
-</div>
+<p>So far, we worked on cleaning the data and did some exploratory data analysis. We dropped a couple columns that have too many NAs in them,  and tried to use different methods to find the correlations between the variables and the products such as heatmap, random forest, and permutation feature importance.</p>
 </div>
 <div class="section" id="obstacles">
 <h2>Obstacles<a class="headerlink" href="#obstacles" title="Permalink to this headline">¶</a></h2>
